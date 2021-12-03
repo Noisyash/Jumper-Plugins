@@ -157,8 +157,8 @@ class RussianRoulette(commands.Cog):
                 "**Round {}**\n*{} spins the cylinder of the gun "
                 "and with a flick of the wrist it locks into "
                 "place.*".format(counter, ctx.bot.user.name)
-                position = random.randint(1, chamber)
             )
+            position = random.randint(1, chamber)
             await asyncio.sleep(3)
             await self.start_round(ctx, chamber, filtered_players)
             counter += 1
